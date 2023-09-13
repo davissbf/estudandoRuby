@@ -144,5 +144,4 @@ celsius = gets.chomp.to_f
 
 fahrenheit = 9 * celsius / 5 + 32
 
-
 puts "A temperatura em Celsius #{(celsius).round(2)}, convertida para Fahrenheit: #{(fahrenheit).round(2)}."
