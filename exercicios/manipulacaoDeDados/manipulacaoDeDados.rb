@@ -87,8 +87,61 @@ puts "Salário anterior do produto: #{preco_produto}, percentual de desconto: #{
 
 # 9 Crie um script em Ruby que leia um valor real em dólar e converta o valor para reais. Considere que a cotação é US$ 1 = R$ 3,20.
 
+=begin
 dolar = gets.chomp.to_f
 cotacao = 3.20
 valor_reais = dolar * cotacao
 
 puts "Valor em recebido em dolar: #{dolar}, valor da cotação: #{cotacao}. Valor cotado para reais R$: #{valor_reais.round(2)}."
+=end
+
+# Crie um script em Ruby que leia uma distância (em Km) entre dois pontos e o preço da gasolina em reais. Depois, calcule e mostre quantos litros de gasolina o carro irá consumir e quanto será o gasto em reais. Considere que o carro consegue percorrer 12 Km com um litro de gasolina.
+
+=begin
+distancia_km = gets.chomp.to_f
+preco_gasolina = gets.chomp.to_f
+
+eficiencia_carro = 12.0
+
+litros_gasolina = distancia_km / eficiencia_carro
+
+custo_reais = litros_gasolina * preco_gasolina
+
+puts "O carro irá consumir #{litros_gasolina.round(2)} litros de gasolina."
+puts "O custo total será de R$ #{custo_reais.round(2)}."
+=end
+
+# Crie um script em Ruby que leia a distância a ser percorrida e a velocidade média de um veículo. O script deve calcular e mostrar o tempo em que o veículo chegará ao seu destino.
+
+=begin
+distancia_percorrida = gets.chomp.to_f
+velocidade_media = gets.chomp.to_f
+
+tempo_horas = distancia_percorrida / velocidade_media
+
+tempo_minutos = tempo_horas * 60
+
+puts "O veículo chegará ao destino em aproximadamente #{tempo_horas.round(2)} horas (ou #{tempo_minutos.round(2)} minutos)."
+=end
+
+# Crie um script em Ruby que leia as variáveis inteiras n1 e n2 e troque o valor dessas variáveis. Isto é, n1 deve ficar com o valor de n2 e n2 deve ficar com o valor de n1. Em seguida mostre os valores depois da troca.
+
+=begin
+n1 = gets.chomp
+n2 = gets.chomp
+
+valor_n1 = n1
+
+n1 = n2
+n2 = valor_n1
+
+puts "Valores invertidos: n1: #{n1} e n2: #{n2}"
+=end
+
+# Crie um script em Ruby que leia uma temperatura em Celsius e a converte para Fahrenheit. Para converter de Celsius para Fahrenheit use a seguinte fórmula: F = 9 * C/5 + 32
+
+celsius = gets.chomp.to_f
+
+fahrenheit = 9 * celsius / 5 + 32
+
+puts "A temperatura em Celsius #{(celsius).round(2)}, convertida para Fahrenheit: #{(fahrenheit).round(2)}."
