@@ -140,6 +140,7 @@ puts "Valores invertidos: n1: #{n1} e n2: #{n2}"
 
 # Crie um script em Ruby que leia uma temperatura em Celsius e a converte para Fahrenheit. Para converter de Celsius para Fahrenheit use a seguinte fórmula: F = 9 * C/5 + 32
 
+puts "Digite uma temperatura em graus Celsius: "
 celsius = gets.chomp.to_f
 
 fahrenheit = 9 * celsius / 5 + 32
