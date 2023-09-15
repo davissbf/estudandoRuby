@@ -140,9 +140,30 @@ puts "Valores invertidos: n1: #{n1} e n2: #{n2}"
 
 # Crie um script em Ruby que leia uma temperatura em Celsius e a converte para Fahrenheit. Para converter de Celsius para Fahrenheit use a seguinte fórmula: F = 9 * C/5 + 32
 
-puts "Digite uma temperatura em graus Celsius: "
-celsius = gets.chomp.to_f
 
-fahrenheit = 9 * celsius / 5 + 32
+# Comparando números inteiros
+result = 5 <=> 3  # Isso resultará em result contendo 1, porque 5 é maior que 3.
 
-puts "A temperatura em Celsius #{(celsius).round(2)}, convertida para Fahrenheit: #{(fahrenheit).round(2)}."
+# Comparando strings
+result = "banana" <=> "apple"  # Isso resultará em result contendo 1, porque "banana" vem depois de "apple" em ordem alfabética.
+
+class Person
+    attr_accessor :name, :age
+
+    def initialize(name, age)
+        @name = name
+        @age = age
+    end
+
+    def <=>(other)
+        # Comparando pessoas com base em sua idade
+        @age <=> other.age
+    end
+end
+  
+person1 = Person.new("Alice", 30)
+person2 = Person.new("Bob", 25)
+
+result = person1 <=> person2  # Isso usará o método <=> personalizado na classe Person para comparar as idades.
+
+puts "RESULTADO => #{result}"
