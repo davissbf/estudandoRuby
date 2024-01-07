@@ -10,7 +10,6 @@ class PoorPerson
     end
 end
 
-
 class Person < RichPerson
     attr_accessor :name, :age
 
